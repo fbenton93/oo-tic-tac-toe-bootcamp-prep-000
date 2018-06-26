@@ -107,6 +107,10 @@ class TicTacToe
   
   end
   
-  
+  def full?
+    @board.all? do |place|
+      place.include?("X") || place.include?("O")
+    end
+  end
   
 end
