@@ -136,10 +136,11 @@ class TicTacToe
       return nil
     end
   
-    winning_spots = won?(board)
+    winning_spots = won?
     winner_value = winning_spots[0]
-    return board[winner_value]
+    return @board[winner_value]
   end
+  
   
   
   
