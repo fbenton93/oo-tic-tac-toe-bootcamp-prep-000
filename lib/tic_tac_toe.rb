@@ -28,4 +28,9 @@ class TicTacToe
     return index_value
   end
   
+  def move(index_value,player = "X")
+    @board[index_value] = player
+    return @board
+  end
+  
 end
