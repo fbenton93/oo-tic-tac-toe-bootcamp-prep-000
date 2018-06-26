@@ -141,7 +141,24 @@ class TicTacToe
     return @board[winner_value]
   end
   
-  
+  def play
+    counter = 0
+    while counter < 9
+    
+      if won? != false
+        puts "Congratulations #{winner}!"
+        break
+      end
+      
+      if draw? == true
+        puts "Cat's Game!"
+        break
+      end
+    
+      counter += 1
+      turn
+    end
+  end
   
   
   
